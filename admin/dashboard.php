@@ -14,7 +14,7 @@ include('../include/connection.php');
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>E-Voting | Dashboard</title>
+    <title>Vo-Ten | Dashboard</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
@@ -60,7 +60,7 @@ include('../include/connection.php');
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="hidden-xs"><i class="fa fa-user"></i> Administrator</span> &nbsp;<i class="fa fa-caret-down"></i>
+                  <span class="hidden-xs"><i class="fa fa-user"></i> <?php echo $_SESSION['user']; ?></span> &nbsp;<i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
@@ -192,9 +192,9 @@ include('../include/connection.php');
     </div>
     <!-- ./wrapper -->
 
-    <!-- jQuery 2.2.3 -->
+    <!-- jQuery -->
     <script src="../assets/js/jquery-2.2.3.min.js"></script>
-    <!-- Bootstrap 3.3.6 -->
+    <!-- Bootstrap -->
     <script src="../assets/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../assets/js/app.min.js"></script>
