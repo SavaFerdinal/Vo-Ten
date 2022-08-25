@@ -95,8 +95,8 @@ if(!isset($_SESSION['siswa'])) {
 
          } else {
 
-            echo '<div class="callout warning">
-                     <h2>Belum Ada Calon Ketua</h2>
+            echo '<div class="text-center" style="padding-top: 25%;">
+                     <h1>Belum Ada Calon Ketua</h1>
                      <a href="logout.php">Kembali ke Beranda</a>
                   </div>';
          }

@@ -8,7 +8,19 @@ if(!isset($_SESSION['id_admin'])) {
       <h3>Daftar Siswa</h3>
    </div>
    <div class="col-md-3 col-sm-3" style="padding-top:10px;">
-      <a class="btn btn-primary" href="?page=user&action=tambah">Tambah Siswa</a>
+      <?php
+      if(isset($_SESSION['message']))
+      {
+            echo "<h4>".$_SESSION['message']."</h4>";
+            unset($_SESSION['message']);
+      }
+      ?> 
+      <form action="user/code.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="import_file" class="form-control" />
+            <br>
+            <button type="submit" name="save_excel_data" class="btn btn-success">Import</button>
+            <a class="btn btn-primary mt-3" href="?page=user&action=tambah">Tambah Siswa</a>
+      </form>
    </div>
    <div style="clear:both"></div>
    <hr />
