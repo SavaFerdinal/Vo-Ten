@@ -1,4 +1,4 @@
-# e-voting
+# Vo-Ten
 
 Aplikasi E-voting berbasis web
 
