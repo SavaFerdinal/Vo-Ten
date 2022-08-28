@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') or die("No Access Allowed");?>
 
-<h2 class="index-header" style="margin-bottom: 30px;">Selamat Datang di Aplikasi E - Voting</h2>
+<h2 class="index-header" style="margin-bottom: 30px;">Selamat Datang di Aplikasi VoTen</h2>
 <div class="row">
     <div class="col-md-4 col-md-offset-1">
         <img src="./assets/img/osis.png" class="img" alt="Slideshow 2" >
