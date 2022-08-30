@@ -59,6 +59,17 @@ if (isset($_POST['submit'])) {
             <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="./assets/css/custom.css"/>
             <style type="text/css">
+                  #content-slider {
+                  position: relative;
+                  width: 400px;
+                  height: 300px;
+                  overflow: hidden;
+                  }
+                  #content-slider img {
+                  display: block;
+                  width: 400px;
+                  height: 300px;
+                  }
                   .img-thanks {
                         max-width: 200px;
                         width: 100%;

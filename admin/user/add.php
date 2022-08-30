@@ -94,7 +94,7 @@ if(isset($_POST['add_user'])) {
 
             <div class="form-group">
                 <div class="col-md-8 col-md-offset-2">
-                    <button type="submit" name="add_user" value="Tambah User" class="btn btn-success"></button>
+                    <button type="submit" name="add_user" value="Tambah User" class="btn btn-success">Tambah Siswa</button>
                     <button type="button" onclick="window.history.back()" class="btn btn-danger">Kembali</button>
                 </div>
             </div>
