@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 26, 2022 at 07:58 AM
+-- Generation Time: Aug 31, 2022 at 11:51 PM
 -- Server version: 8.0.29
 -- PHP Version: 8.1.8
 
@@ -39,7 +39,7 @@ CREATE TABLE `t_admin` (
 --
 
 INSERT INTO `t_admin` (`id_admin`, `username`, `fullname`, `password`) VALUES
-(1, 'admin', 'Administrator', '$2y$10$5ok3rcIOv/yNIlPIGo49a.cXRAiA5ZsnxbpijFoyy5EuuYyVrZetu');
+(1, 'admin', 'Sava Ferdinal', '$2y$10$5ok3rcIOv/yNIlPIGo49a.cXRAiA5ZsnxbpijFoyy5EuuYyVrZetu');
 
 -- --------------------------------------------------------
 
@@ -51,11 +51,19 @@ CREATE TABLE `t_kandidat` (
   `id_kandidat` smallint NOT NULL,
   `nama_calon` varchar(50) NOT NULL,
   `foto` varchar(255) NOT NULL,
-  `visi` varchar(255) NOT NULL,
-  `misi` varchar(255) NOT NULL,
+  `visi` varchar(500) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `misi` varchar(500) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `suara` smallint NOT NULL DEFAULT '0',
   `periode` varchar(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `t_kandidat`
+--
+
+INSERT INTO `t_kandidat` (`id_kandidat`, `nama_calon`, `foto`, `visi`, `misi`, `suara`, `periode`) VALUES
+(13, 'Robben', '0.46352500 1661858988.png', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie consectetur eros id varius. Donec lorem ipsum, venenatis sit amet suscipit in, semper eu odio. Sed nisi quam, egestas vel molestie a, ultrices et ipsum. Sed quis accumsan leo, vel auctor sapien. Sed eu est tristique dolor feugiat hendrerit ut eget metus.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie consectetur eros id varius. Donec lorem ipsum, venenatis sit amet suscipit in, semper eu odio. Sed nisi quam, egestas vel molestie a, ultrices et ipsum. Sed quis accumsan leo, vel auctor sapien. Sed eu est tristique dolor feugiat hendrerit ut eget metus.', 0, '2022/2023'),
+(14, 'Kety', '0.22782300 1661859002.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie consectetur eros id varius. Donec lorem ipsum, venenatis sit amet suscipit in, semper eu odio. Sed nisi quam, egestas vel molestie a, ultrices et ipsum. Sed quis accumsan leo, vel auctor sapien. Sed eu est tristique dolor feugiat hendrerit ut eget metus.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie consectetur eros id varius. Donec lorem ipsum, venenatis sit amet suscipit in, semper eu odio. Sed nisi quam, egestas vel molestie a, ultrices et ipsum. Sed quis accumsan leo, vel auctor sapien. Sed eu est tristique dolor feugiat hendrerit ut eget metus.', 0, '2022/2023');
 
 -- --------------------------------------------------------
 
@@ -144,7 +152,7 @@ ALTER TABLE `t_admin`
 -- AUTO_INCREMENT for table `t_kandidat`
 --
 ALTER TABLE `t_kandidat`
-  MODIFY `id_kandidat` smallint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_kandidat` smallint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
