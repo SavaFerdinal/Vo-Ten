@@ -7,5 +7,5 @@ defined('BASEPATH') or die("No Access Allowed");
    </div>
    <h2>Terima Kasih Atas Partisipasi Anda</h2>
    <p>Suara yang anda berikan menentukan masa depan sekolah</p>
-   <a href="./" class="button alert large">Back to Home</a>
+   <a href="./" class="btn btn-danger">Back to Home</a>
 </div>
