@@ -1,28 +1,34 @@
 <?php defined('BASEPATH') or die("No Access Allowed"); ?>
 
-<h2 class="index-header" style="margin-bottom: 30px;">Selamat Datang di Aplikasi VoTen</h2>
-<div class="row">
-    <div class="col-md-4 col-md-offset-1">
-        <div id="content-slider">
-            <img src="./assets/img/osis.png" class="img" alt="Slideshow 2">
-            <img src="./assets/img/voting.png" class="img" alt="Slideshow 3">
-        </div>
-    </div>
-    <div class="col-md-6 form">
-        <span class="info-login">Silahkan Login untuk dapat melakukan pemilihan</span>
-        <br />
-        <br />
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
         <form action="" method="post">
-            <div class="form-group">
-                <label>Masukkan NIS :</label>
-                <input type="number" class="form-control" placeholder="NIS" required="NIS" name="nis" />
-            </div>
-            <br />
-            <div class="row">
-                <div class="text-right" style="padding-right:15px;">
-                    <input type="submit" name="submit" class="btn btn-danger btn-lg" value="Login">
-                </div>
-            </div>
+          <div class="text-center">
+          <span class="info-login"><h4>Login untuk dapat melakukan pemilihan</h4></span>
+          </div>
+
+          <div class="divider d-flex align-items-center my-4">
+          </div>
+
+          <!-- NIS input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form3Example3">Masukkan NIS</label>
+            <input type="number" class="form-control form-control-lg" placeholder="Enter a valid NIS" required="NIS" name="nis"/>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <input type="submit" name="submit" value="login" class="btn btn-danger btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">
+          </div>
+
         </form>
+      </div>
     </div>
-</div>
+  </div>
+</section>

@@ -97,7 +97,7 @@ if(!isset($_SESSION['siswa'])) {
 
             echo '<div class="text-center" style="padding-top: 25%;">
                      <h1>Belum Ada Calon Ketua</h1>
-                     <a href="logout.php">Kembali ke Beranda</a>
+                     <a href="logout.php" class="btn btn-danger">Kembali ke Beranda</a>
                   </div>';
          }
 

@@ -55,8 +55,9 @@ if (isset($_POST['submit'])) {
 <html>
       <head>
             <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Vo-Ten</title>
-            <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
             <link rel="stylesheet" href="./assets/css/custom.css"/>
             <style type="text/css">
                   #content-slider {
@@ -74,6 +75,22 @@ if (isset($_POST['submit'])) {
                         max-width: 200px;
                         width: 100%;
                         max-height: 250px;
+                  }
+
+                  .divider:after,
+                  .divider:before {
+                  content: "";
+                  flex: 1;
+                  height: 1px;
+                  background: #eee;
+                  }
+                  .h-custom {
+                  height: calc(100% - 73px);
+                  }
+                  @media (max-width: 450px) {
+                  .h-custom {
+                  height: 100%;
+                  }
                   }
             </style>
       </head>
@@ -101,9 +118,6 @@ if (isset($_POST['submit'])) {
                   </div>
                   
             </div>
-            <footer>
-                  <?php echo date('Y'); ?> &copy;
-            </footer>
             <script type="text/javascript" src="./assets/js/jquery-2.2.3.min.js"></script>
             <script type="text/javascript" src="./assets/js/jquery-cycle.min.js"></script>
             <script type="text/javascript">
