@@ -3,7 +3,10 @@
 <section class="vh-100">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-md-9 col-lg-6 col-xl-5">
+      <div class="text-center">
+        <span><h1>Selamat Datang Di Vo-Ten</h1></span>
+      </div>
+      <div class="col-md-9 col-lg-6 ">
         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
           class="img-fluid" alt="Sample image">
       </div>
@@ -23,7 +26,7 @@
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-            <input type="submit" name="submit" value="login" class="btn btn-danger btn-lg"
+            <input type="submit" name="submit" value="Login" class="btn btn-danger btn-lg"
               style="padding-left: 2.5rem; padding-right: 2.5rem;">
           </div>
 

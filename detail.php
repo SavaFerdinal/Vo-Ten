@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Profil Calon ~ E - Voting</title>
+      <title>Profil Calon</title>
       <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
       <style type="text/css">
          body {
@@ -22,7 +22,7 @@
    <body>
       <div class="container">
          <div class="text-center" style="padding-top:20px; color:#eee;">
-            <h2>Profil Calon Ketua</h2>
+            <h2>Profil Calon Ketua & Wakil</h2>
          </div>
          <hr />
 
@@ -55,23 +55,26 @@
                      </div>
 
                      <div class="col-md-8">
-                        <h3 style="color:#eee">Informasi Calon</h3>
                         <table class="table table-striped" style="background: #fff;">
                            <tr>
-                              <td width="200px">Nama Calon</td>
-                              <td>: <?php echo $nama; ?></td>
+                              <td width="200px"><b>Calon</b></td>
+                              <td><?php echo $nama; ?></td>
                            </tr>
                            <tr>
                               <td>Visi</td>
-                              <td>: <?php echo nl2br($visi); ?></td>
+                              <td><?php echo nl2br($visi); ?></td>
                            </tr>
                            <tr>
                               <td>Misi</td>
-                              <td>: <?php echo nl2br($misi); ?></td>
+                              <td><?php echo nl2br($misi); ?></td>
+                           </tr>
+                           <tr>
+                              <td>Total Perolehan Suara</td>
+                              <td><?php echo $suara; ?> Suara</td>
                            </tr>
                            <tr>
                               <td>Periode Pencalonan</td>
-                              <td>: <?php echo $periode; ?></td>
+                              <td><?php echo $periode; ?></td>
                            </tr>
                         </table>
                         <div>
