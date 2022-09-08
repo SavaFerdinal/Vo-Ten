@@ -28,6 +28,8 @@
           <div class="text-center text-lg-start mt-4 pt-2">
             <input type="submit" name="submit" value="Login" class="btn btn-danger btn-lg"
               style="padding-left: 2.5rem; padding-right: 2.5rem;">
+            <a href="perolehan.php" class="btn btn-success btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Lihat Hasil</a>
           </div>
 
         </form>
